@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Update Membership</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div class="form-container">
+        <h1>Update Membership</h1>
+        <form id="updateMembershipForm">
+            <label for="membershipNumber">Membership Number:</label>
+            <input type="text" id="membershipNumber" required>
+            
+            <label for="name">Name:</label>
+            <input type="text" id="name" required>
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" required>
+            
+            <label for="membershipType">Membership Type:</label>
+            <select id="membershipType" required>
+                <option value="6months">6 Months</option>
+                <option value="1year">1 Year</option>
+                <option value="2years">2 Years</option>
+            </select>
+            
+            <button type="submit">Update Membership</button>
+        </form>
+        <div id="error" class="error-message"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
